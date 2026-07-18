@@ -4,20 +4,20 @@ import requests
 #def speech_to_text(audio_file):
 
    #files = {
-        "audio_file": audio_file
+     #   "audio_file": audio_file
     }
 
     #data = {
-        "language_code": "en-IN",
-        "format": "transcribe",
-        "itn_native_numerals": "true"
+      #  "language_code": "en-IN",
+       # "format": "transcribe",
+        #"itn_native_numerals": "true"
     }
 
     #response = requests.post(
-        "https://api.vachana.ai/stt/v3",
-        headers=headers,
-        files=files,
-        data=data
+       # "https://api.vachana.ai/stt/v3",
+       # headers=headers,
+       # files=files,
+       # data=data
     )
 
     return response.json()
