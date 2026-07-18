@@ -1,3 +1,6 @@
 streamlit
 google- generateiveai
 pandas
+openai
+requests
+gnani
