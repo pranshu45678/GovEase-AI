@@ -1,10 +1,12 @@
 import streamlit as st
 import requests
 GNANI_API_KEY = st.secrets["GNANI_API_KEY"]
-def speech_to_text(audio_file):
+ data = {
+        "language_code": "en-IN",
+        "format": "transcribe",
+        "itn_native_numerals": "true"
+    }
 
-   files = {
-        "audio_file": audio_file
     }
 
     data = {
@@ -15,7 +17,9 @@ def speech_to_text(audio_file):
 
     response = requests.post(
         "https://api.vachana.ai/stt/v3",
-        headers=headers,
+        headers = {
+    "x-api-key": GNANI_API_KEY
+}
         files=files,
         data=data
     )
