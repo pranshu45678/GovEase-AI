@@ -33,7 +33,6 @@ client = OpenAI(
     base_url="https://openrouter.ai/api/v1"
 )
 from gnani.stt import GnaniSTTClient
-from secret import GNANI_API_KEY
 
 stt_client = GnaniSTTClient(
     api_key=GNANI_API_KEY
