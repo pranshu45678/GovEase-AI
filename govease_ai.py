@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from secret import GNANI_API_KEY
+GNANI_API_KEY = st.secrets["GNANI_API_KEY"]
 def speech_to_text(audio_file):
 
     headers = {
@@ -26,7 +26,7 @@ def speech_to_text(audio_file):
 
     return response.json()
 from openai import OpenAI
-from secret import OPENROUTER_API_KEY
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
 
 client = OpenAI(
     api_key= OPENROUTER_API_KEY,
