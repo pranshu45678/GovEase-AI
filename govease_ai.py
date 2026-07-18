@@ -1,23 +1,19 @@
 import streamlit as st
 import requests
-GNANI_API_KEY = st.secrets["GNANI_API_KEY"]
-def speech_to_text(audio_file):
+#GNANI_API_KEY = st.secrets["GNANI_API_KEY"]
+#def speech_to_text(audio_file):
 
-    headers = {
-        "X-API-Key-ID": GNANI_API_KEY
-    }
-
-    files = {
+   #files = {
         "audio_file": audio_file
     }
 
-    data = {
+    #data = {
         "language_code": "en-IN",
         "format": "transcribe",
         "itn_native_numerals": "true"
     }
 
-    response = requests.post(
+    #response = requests.post(
         "https://api.vachana.ai/stt/v3",
         headers=headers,
         files=files,
@@ -32,10 +28,10 @@ client = OpenAI(
     api_key= OPENROUTER_API_KEY,
     base_url="https://openrouter.ai/api/v1"
 )
-from gnani.stt import GnaniSTTClient
+#from gnani.stt import GnaniSTTClient
 
-stt_client = GnaniSTTClient(
-    api_key=GNANI_API_KEY
+#stt_client = GnaniSTTClient(
+  #  api_key=GNANI_API_KEY
 )
 
 
