@@ -1,5 +1,7 @@
 import streamlit as st
 import requests
+import os
+st.write(os.listdir("."))
 from openai import OpenAI
 
 GNANI_API_KEY = st.secrets["GNANI_API_KEY"]
