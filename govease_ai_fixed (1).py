@@ -195,6 +195,15 @@ service_info = {
         "fee": "Free",
         "time": "2-4 Weeks"
     }
+    "Caste Certificate": {
+    "fee": "₹35",
+    "time": "7-15 Days"
+},
+
+"Income Certificate": {
+    "fee": "₹35",
+    "time": "7-15 Days"
+},
 }
 
 st.header("📄 Smart Document Checklist")
@@ -206,7 +215,9 @@ service = st.selectbox(
         "PAN Card",
         "Voter ID",
         "Passport",
-        "Driving Licence"
+        "Driving Licence",
+        "Caste Certificate",
+        "Income Certificate"
     ]
 )
 
@@ -247,7 +258,29 @@ elif service == "Passport":
     st.info(f"💰 Approximate Fee: {service_info[service]['fee']}")
     st.info(f"⏱ Estimated Time: {service_info[service]['time']}")
     st.caption("⚠️ Fees and processing times are approximate and may change.")
+    
+  elif service == "Caste Certificate":
+    st.success("Required Documents")
+    st.write("✅ Aadhaar Card")
+    st.write("✅ Ration Card (if available)")
+    st.write("✅ Address Proof")
+    st.write("✅ Passport Size Photo")
+    st.write("✅ Previous Caste Certificate (if applicable)")
+    st.info(f"💰 Approximate Fee: {service_info[service]['fee']}")
+    st.info(f"⏱ Estimated Time: {service_info[service]['time']}")
+    st.caption("⚠️ Requirements may vary by state.")
 
+elif service == "Income Certificate":
+    st.success("Required Documents")
+    st.write("✅ Aadhaar Card")
+    st.write("✅ Address Proof")
+    st.write("✅ Income Proof / Salary Certificate")
+    st.write("✅ Ration Card (if available)")
+    st.write("✅ Passport Size Photo")
+    st.info(f"💰 Approximate Fee: {service_info[service]['fee']}")
+    st.info(f"⏱ Estimated Time: {service_info[service]['time']}")
+    st.caption("⚠️ Requirements may vary by state.")
+    
 elif service == "Driving Licence":
     st.success("Required Documents")
     st.write("✅ Aadhaar Card")
