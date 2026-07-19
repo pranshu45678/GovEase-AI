@@ -194,7 +194,7 @@ service_info = {
     "Voter ID": {
         "fee": "Free",
         "time": "2-4 Weeks"
-    }
+    },
     "Caste Certificate": {
     "fee": "₹35",
     "time": "7-15 Days"
@@ -203,7 +203,7 @@ service_info = {
 "Income Certificate": {
     "fee": "₹35",
     "time": "7-15 Days"
-},
+}
 }
 
 st.header("📄 Smart Document Checklist")
