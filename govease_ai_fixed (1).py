@@ -3,6 +3,11 @@ import requests
 
 
 from openai import OpenAI
+st.set_page_config(
+    page_title="GovEase AI",
+    page_icon="🇮🇳",
+    layout="wide"
+)
 
 GNANI_API_KEY = st.secrets["GNANI_API_KEY"]
 OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
@@ -35,7 +40,68 @@ def speech_to_text(audio_file):
     )
 
     return response.json()
+# -------------------- Welcome Page --------------------
+if "start_app" not in st.session_state:
+    st.session_state.start_app = False
 
+if not st.session_state.start_app:
+
+    st.set_page_config(
+        page_title="GovEase AI",
+        page_icon="🇮🇳",
+        layout="wide"
+    )
+
+    st.title("🇮🇳 Welcome to GovEase AI")
+
+    st.markdown("""
+    ## Smart Government Assistant
+
+    GovEase AI helps Indian citizens access government services easily.
+
+    ### Features
+
+    ✅ AI Government Chatbot
+
+    ✅ Smart Document Checklist
+
+    ✅ Document Simplifier
+
+    ✅ Voice Assistant
+
+    ✅ Government Scheme Eligibility Checker
+
+    ### Supported Certificates
+
+    • Aadhaar Update
+
+    • PAN Card
+
+    • Passport
+
+    • Voter ID
+
+    • Driving Licence
+
+    • Income Certificate
+
+    • Caste Certificate
+
+    • Birth Certificate
+
+    • Death Certificate
+    """)
+
+    st.image(
+        "https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg",
+        width=180
+    )
+
+    if st.button("🚀 Enter GovEase AI"):
+        st.session_state.start_app = True
+        st.rerun()
+
+    st.stop()
 
 
 
