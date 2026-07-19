@@ -199,7 +199,7 @@ service_info = {
     "fee": "₹35",
     "time": "7-15 Days"
 },
-    )
+}
 
 "Income Certificate": {
     "fee": "₹35",
