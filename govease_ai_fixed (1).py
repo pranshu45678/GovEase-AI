@@ -205,14 +205,15 @@ service_info = {
     "fee": "₹35",
     "time": "7-15 Days"
 },
-    "Birth Certificate":{
-        "fee": "20",
+    "Birth Certificate": {
+        "fee": "₹20",
         "time": "7-15 Days"
-},
-    "Death Certificate":{
-        "fee": "20"
-         "time": "7-15 Days"
+    },
+    "Death Certificate": {
+        "fee": "₹20",
+        "time": "7-15 Days"
     }
+}
 
 st.header("📄 Smart Document Checklist")
 
