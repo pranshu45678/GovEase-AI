@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-import os
+
 
 from openai import OpenAI
 
