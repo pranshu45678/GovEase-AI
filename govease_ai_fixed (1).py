@@ -196,15 +196,13 @@ service_info = {
         "time": "2-4 Weeks"
     },
     "Caste Certificate": {
-    "fee": "₹35",
-    "time": "7-15 Days"
-},
-}
-
-"Income Certificate": {
-    "fee": "₹35",
-    "time": "7-15 Days"
-},
+        "fee": "₹35",
+        "time": "7-15 Days"
+    },
+    "Income Certificate": {
+        "fee": "₹35",
+        "time": "7-15 Days"
+    },
     "Birth Certificate": {
         "fee": "₹20",
         "time": "7-15 Days"
@@ -226,7 +224,9 @@ service = st.selectbox(
         "Passport",
         "Driving Licence",
         "Caste Certificate",
-        "Income Certificate"
+        "Income Certificate",
+        "Birth Certificate",
+        "Death Certificate"
     ]
 )
 
