@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 import os
-st.write(os.listdir("."))
+
 from openai import OpenAI
 
 GNANI_API_KEY = st.secrets["GNANI_API_KEY"]
@@ -37,7 +37,7 @@ def speech_to_text(audio_file):
     return response.json()
 
 
-st.subheader("📄 Popular Government Documents")
+
 
 st.subheader("📄 Popular Government Documents")
 
