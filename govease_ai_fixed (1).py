@@ -267,6 +267,7 @@ elif service == "Driving Licence":
     st.info(f"💰 Approximate Fee: {service_info[service]['fee']}")
     st.info(f"⏱ Estimated Time: {service_info[service]['time']}")
     st.caption("⚠️ Fees and processing times are approximate and may change.")
+    
     elif service == "Caste Certificate":
     st.success("Required Documents")
     st.write("✅ Aadhaar Card")
