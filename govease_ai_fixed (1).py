@@ -35,7 +35,24 @@ def speech_to_text(audio_file):
     return response.json()
 
 
+st.subheader("📄 Popular Government Documents")
 
+col1, col2, col3, col4, col5 = st.columns(5)
+
+with col1:
+    st.image("aadhaar_png.png", caption="Aadhaar")
+
+with col2:
+    st.image("pan cad.png.png", caption="PAN Card")
+
+with col3:
+    st.image("passport_png.png", caption="Passport")
+
+with col4:
+    st.image("voter id_png.png", caption="Voter ID")
+
+with col5:
+    st.image("license_png.png", caption="Driving Licence")
 col1, col2 = st.columns(2)
 
 with col1:
