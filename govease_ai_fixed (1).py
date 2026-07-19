@@ -39,23 +39,40 @@ def speech_to_text(audio_file):
 
 st.subheader("📄 Popular Government Documents")
 
-col1, col2, col3, col4, col5 = st.columns(5)
+st.subheader("📄 Popular Government Documents")
+
+col1, col2 = st.columns(2)
 
 with col1:
-    st.image("aadhaar_png.png", caption="Aadhaar")
+    st.info("""
+    🪪 Aadhaar Card
+
+    • Identity Proof
+    • Address Proof
+    • Required for most government services
+    """)
+
+    st.info("""
+    🏦 PAN Card
+
+    • Tax Identification
+    • Banking & Financial Services
+    """)
 
 with col2:
-    st.image("pancad.png.png", caption="PAN Card")
+    st.info("""
+    🛂 Passport
 
-with col3:
-    st.image("passport_png.png", caption="Passport")
+    • International Travel
+    • Government-issued Identity
+    """)
 
-with col4:
-    st.image("voterid_png.png", caption="Voter ID")
+    st.info("""
+    🗳️ Voter ID
 
-with col5:
-    st.image("license_png.png", caption="Driving Licence")
-col1, col2 = st.columns(2)
+    • Voting in Elections
+    • Identity Proof
+    """)
 
 with col1:
     st.markdown("### 🪪 Identity Services")
