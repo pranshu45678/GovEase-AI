@@ -268,27 +268,9 @@ elif service == "Driving Licence":
     st.info(f"⏱ Estimated Time: {service_info[service]['time']}")
     st.caption("⚠️ Fees and processing times are approximate and may change.")
     
-    elif service == "Caste Certificate":
-    st.success("Required Documents")
-    st.write("✅ Aadhaar Card")
-    st.write("✅ Ration Card (if available)")
-    st.write("✅ Address Proof")
-    st.write("✅ Passport Size Photo")
-    st.write("✅ Previous Caste Certificate (if applicable)")
-    st.info(f"💰 Approximate Fee: {service_info[service]['fee']}")
-    st.info(f"⏱ Estimated Time: {service_info[service]['time']}")
-    st.caption("⚠️ Requirements may vary by state.")
+    
 
-elif service == "Income Certificate":
-    st.success("Required Documents")
-    st.write("✅ Aadhaar Card")
-    st.write("✅ Address Proof")
-    st.write("✅ Income Proof / Salary Certificate")
-    st.write("✅ Ration Card (if available)")
-    st.write("✅ Passport Size Photo")
-    st.info(f"💰 Approximate Fee: {service_info[service]['fee']}")
-    st.info(f"⏱ Estimated Time: {service_info[service]['time']}")
-    st.caption("⚠️ Requirements may vary by state.")
+
      
 st.header("📄 Document Simplifier")
 
